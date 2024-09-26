@@ -18,7 +18,7 @@ export class UserFactory extends Factory<Users> {
 
   protected entity = Users;
   protected attrs(): FactorizedAttrs<Users> {
-    const gender: Sex = this.genderList[faker.datatype.number(1)];
+    const gender: Sex = this.genderList[faker.number.int(1)];
     const firstName = faker.person.firstName(gender);
     const lastName = faker.person.lastName(gender);
 

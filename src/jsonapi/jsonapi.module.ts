@@ -25,7 +25,6 @@ import {
       imports: [HttpModule],
       options: {
         debug: true,
-        maxExecutionTime: 3000,
         requiredSelectField: false,
       },
     }),
